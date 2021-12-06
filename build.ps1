@@ -26,8 +26,8 @@ $artifacts = ".\artifacts"
 
 if(Test-Path $artifacts) { Remove-Item $artifacts -Force -Recurse }
 
-exec { & dotnet clean .\src\EventStore.Repository -c Release }
+exec { & dotnet clean .\src\EventStore.Repository.Snapshots.MSSQLServer -c Release }
 
-exec { & dotnet build .\src\EventStore.Repository -c Release }
+exec { & dotnet build .\src\EventStore.Repository.Snapshots.MSSQLServer -c Release }
 
 exec { dotnet pack .\src\EventStore.Repository.Snapshots.MSSQLServer -c Release -o $artifacts --no-build }
