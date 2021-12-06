@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<Description>EventRepository MS SQL Server Snapshot Service for EventStore</Description>
+		<Copyright>Copyright Theunis van der Stoep</Copyright>
+		<TargetFrameworks>net5.0</TargetFrameworks>
+		<AssemblyName>EventStore.Repository.Snapshots.MSSQLServer</AssemblyName>
+		<PackageId>EventStore.Repository.Snapshots.MSSQLServer</PackageId>
+		<PackageTags>eventrepository,eventstore,repository,mssql</PackageTags>
+		<SignAssembly>true</SignAssembly>
+		<Version>0.1.1</Version>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<PublishRepositoryUrl>true</PublishRepositoryUrl>
+		<IncludeSymbols>true</IncludeSymbols>
+		<SymbolPackageFormat>snupkg</SymbolPackageFormat>
+		<EmbedUntrackedSources>true</EmbedUntrackedSources>
+		<Deterministic>true</Deterministic>
+	</PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="EventStore.EventRepository" Version="0.1.1" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.3" />
+  </ItemGroup>
+
+</Project>
