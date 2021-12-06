@@ -8,7 +8,7 @@
 		<PackageId>EventStore.Repository.Snapshots.MSSQLServer</PackageId>
 		<PackageTags>eventrepository,eventstore,repository,mssql</PackageTags>
 		<SignAssembly>true</SignAssembly>
-		<Version>0.1.1</Version>
+		<Version>0.1.2</Version>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
 		<PublishRepositoryUrl>true</PublishRepositoryUrl>
 		<IncludeSymbols>true</IncludeSymbols>
